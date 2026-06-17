@@ -1,0 +1,19 @@
+[package]
+name = "niri-workspace-column-indicator"
+version = "0.1.0"
+authors = ["willemw12 <willemw12@gmail.com>"]
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "A Niri workspace-column-indicator module for Waybar. Displays which column in a workspace has focus."
+#documentation = "https://github.com/willemw12/niri-workspace-column-indicator"
+homepage = "https://github.com/willemw12/niri-workspace-column-indicator"
+repository = "https://github.com/willemw12/niri-workspace-column-indicator"
+readme = "README.md"
+keywords = ["niri wayland"]
+categories = ["niri wayland"]
+
+[dependencies]
+anyhow = "1.0"
+niri-ipc = "26.4.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
