@@ -1,10 +1,10 @@
-use anyhow::{Result, anyhow};
+use anyhow::{Result, bail};
 use niri_ipc::{Event, Request, Response, socket::Socket};
 
 fn main() -> Result<()> {
     let mut socket_events = Socket::connect()?;
     if let Err(e) = socket_events.send(Request::EventStream)? {
-        return Err(anyhow!("Failed to start event stream: {e:?}"));
+        bail!("Failed to start event stream: {e}");
     }
 
     let mut socket_requests = Socket::connect()?;
@@ -39,7 +39,7 @@ fn print_columns_info(socket: &mut Socket) -> Result<()> {
             };
 
             let Ok(Response::Windows(windows)) = socket.send(Request::Windows)? else {
-                return Err(anyhow!("Failed to get windows"));
+                bail!("Failed to get windows");
             };
 
             let total_columns = windows
@@ -79,7 +79,7 @@ fn print_columns_info(socket: &mut Socket) -> Result<()> {
 //
 //     let reply = socket.send(Request::Workspaces)?;
 //     let Ok(Response::Workspaces(workspaces)) = reply else {
-//         return Err(anyhow!("Failed to get workspaces: {reply:?}"));
+//         bail!("Failed to get workspaces: {reply:?}");
 //     };
 //
 //     let focused_workspace_id = workspaces.iter().find(|ws| ws.is_focused).map(|ws| ws.id);
