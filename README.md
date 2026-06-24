@@ -50,7 +50,7 @@ Here is a Waybar module configuration example in file ~/.config/waybar/config:
 Alternative
 -----------
 
-File [`niri-workspace-column-indicator.sh`](./extra/niri-workspace-column-indicator.sh) does the same as the Rust program but is written in Bash.
+File [`./extra/niri-workspace-column-indicator.sh`](./extra/niri-workspace-column-indicator.sh) does the same as the Rust program but is written in Bash.
 
 
 License
