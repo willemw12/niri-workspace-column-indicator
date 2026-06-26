@@ -42,7 +42,8 @@ Here is a Waybar module configuration example in file ~/.config/waybar/config:
     "exec": "niri-workspace-column-indicator",
     // "exec": "~/.config/waybar/scripts/niri-workspace-column-indicator",
     "return-type": "text",
-    "format": "            {}"
+    "format": "            {}",
+    "tooltip": false
 },
 ```
 
