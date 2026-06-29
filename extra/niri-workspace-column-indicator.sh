@@ -36,9 +36,9 @@ print_columns_info() {
 
   ####
 
-  local bar
+  local bar column_text=
   bar=$(for ((i = 1; i <= total_columns; i++)); do ((i == column_pos)) && echo -n ' ' || echo -n ' '; done) # ' '
-  [[ -n "$column_pos" && "$column_pos" != null ]] && local column_text="  ($column_pos)"
+  [[ -n "$column_pos" && "$column_pos" != null ]] && column_text="  ($column_pos)"
   printf '%s%s\n' "$bar" "$column_text"
 }
 
