@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# A Niri workspace-column-indicator module for Waybar. Displays which column in a workspace has focus.
+# A Niri workspace-column-indicator module for Waybar. Displays which column in the workspace has focus.
 #
 # Dependencies: jq
 #

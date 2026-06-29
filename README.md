@@ -1,7 +1,7 @@
 niri-workspace-column-indicator
 ===============================
 
-A Niri workspace-column-indicator (for Waybar). Displays which column in a workspace has focus.
+A Niri workspace-column-indicator (for Waybar). Displays which column in the workspace has focus.
 
 It prints to standard output.
 
