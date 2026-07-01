@@ -10,7 +10,7 @@ main() {
   print_columns_info
 
   niri msg event-stream | while read -r line; do
-    # printf 'DEBUG: line=%s\n' "$line"
+    # printf 'DEBUG: line=%s\n' "$line" >&2
     case "$line" in
       # 'Window opened or changed': when a column could be created
       # 'Window closed': when a column on another workspace could be deleted
