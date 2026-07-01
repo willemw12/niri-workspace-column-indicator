@@ -13,7 +13,7 @@ fn main() -> Result<()> {
 
     let mut read_event = socket_events.read_events();
     while let Ok(event) = read_event() {
-        // println!("DEBUG: {event:?}");
+        // eprintln!("DEBUG: {event:?}");
 
         #[allow(clippy::single_match)]
         match event {
