@@ -13,7 +13,7 @@ For example, here a tiled window on column 4 has focus:
 Installation
 ------------
 
-Requires "Fontawesome icons" to print the symbol characters, for example the icons in the "Fira Code Nerd" font.
+Requires "Font Awesome icons" to print the symbol characters. Install the font recommended by Waybar or some other compatible font ("Fira Code Nerd", etc.).
 
 Requires [Rust](https://www.rust-lang.org/) to build.
 
