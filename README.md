@@ -38,7 +38,7 @@ Configuration
 
 Here is a custom Waybar module configuration example in file ~/.config/waybar/config:
 
-```
+```json
 "modules-left": ["niri/workspaces", "custom/niri-columns"],
 "custom/niri-columns": {
     "exec": "niri-workspace-column-indicator",
